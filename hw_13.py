@@ -1,7 +1,10 @@
-import json
+import os
 from create_directories_additions import films_awards
+from spells import unforgivable_curses
 
-films_awards_json = json.dumps(films_awards)
+os.chdir("HW_13/Harry Potter")
+unforgivable_curses.avada_kedavra()
 
-print(films_awards_json)
-
+os.chdir("/home/admin_o/PycharmProjects/hillel_git")
+unforgivable_curses.save_json(data=films_awards, json_file="films_awards.json")
+unforgivable_curses.imperius('films_awards.json')

@@ -62,7 +62,7 @@ def create_award_directory():
 
 create_film_directory()
 create_a_z_directories()
-movie_awards_to_dict()
+movies_awards = movie_awards_to_dict()
 
 # Sort lists by award_name
 sorted_movies_awards = {key: sorted(value, key=lambda x: x["award_name"]) for key, value in movies_awards.items()}
